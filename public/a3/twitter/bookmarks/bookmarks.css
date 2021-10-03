@@ -1,0 +1,135 @@
+.wd-caption-title {
+    padding-left: 12px;
+    color: white;
+    font-size: 15px;
+}
+
+.wd-caption {
+    color: #6e767d;
+    font-size: 15px;
+    padding-left: 12px;
+}
+
+.wd-a-container {
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+    border-style: solid;
+    border-color: #2f3336;
+    border-width: 1px;
+    width: 700px;
+    float: left;
+    margin: -8px;
+}
+
+.wd-b-container {
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+    border-style: solid;
+    border-color: #2f3336;
+    border-width: 1px;
+    margin-top: 7px;
+    width: 70px;
+    float: left;
+    border-right: none;
+    height: 550px;
+    margin-left: -8px;
+}
+
+.wd-grid-col-main-content {
+    margin-top: 7px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    background-color: black;
+    border-style: solid;
+    border-color: #2f3336;
+    border-width: 1px;
+    width: 614px;
+    float: left;
+    border-left: none;
+    height: 550px;
+}
+
+.wd-content-image {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-style: solid;
+    border-color: #2f3336;
+    border-width: 1px;
+}
+
+.wd-caption-container {
+    border-style: solid;
+    border-color: #2f3336;
+    border-width: 1px;
+    color: white;
+    margin-top: -10px;
+    width: 504px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.wd-author {
+    font-size: 15px;
+    color: white;
+}
+
+.wd-wrap-lines {
+    max-width: 506px;
+}
+
+.wd-handle2 {
+    font-size: 15px;
+    color: #6e767d;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-title {
+    font-size: 20px;
+    color: white;
+}
+
+.wd-handle {
+    font-size: 13px;
+    color: #6e767d;
+}
+
+.wd-img-circle {
+    border-radius: 50%;
+}
+
+.wd-icons {
+    color: #6e767d;
+    text-decoration: none;
+}
+
+.wd-red {
+    color: red;
+}
+
+.wd-padding {
+    padding-top: 12px;
+}
+
+.wd-padding-tweet {
+    padding-top: 6px;
+    padding-bottom: 12px;
+}
+
+.wd-padding-left {
+    padding-left: 12px;
+    padding-right: 90px;
+}
+
+.wd-padding-btwn {
+    margin-top: -4px;
+}
