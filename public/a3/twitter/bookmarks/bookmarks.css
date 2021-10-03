@@ -18,9 +18,11 @@
     border-style: solid;
     border-color: #2f3336;
     border-width: 1px;
-    width: 98%;
+    width: 93%;
     float: left;
-    margin: -8px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-bottom: 3px;
 }
 
 .wd-b-container {
@@ -32,8 +34,6 @@
     border-color: #2f3336;
     border-width: 1px;
     margin-top: 7px;
-    width: 70px;
-    float: left;
     border-right: none;
     height: 550px;
     margin-left: -8px;
@@ -132,4 +132,13 @@
 
 .wd-padding-btwn {
     margin-top: -4px;
+}
+
+.wd-grid-col-third-page {
+    width: 4%;
+    float: left;
+}
+.wd-grid-col-two-thirds-page {
+    width: 96%;
+    float: left;
 }
