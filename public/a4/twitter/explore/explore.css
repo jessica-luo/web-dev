@@ -16,12 +16,7 @@ span.wd-white {
     border: none;
 }
 
-.wd-blue {
-    color: #0b5ed7;
-}
-
-.wd-gray {
-    color: gray;
-    font-weight: normal;
+.wd-borders {
+    border-right: #1da1f2;
 }
 
