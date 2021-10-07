@@ -52,13 +52,17 @@
 
         <!-- Main Content -->
         <div class="col-6">
-            <div class="input-group mt-2">
-                <span class="input-group-text wd-img-round wd-white"><i class="fas fa-search"></i></span>
-                <input type="search" class="wd-img-round form-control wd-search-border me-2"
-                       placeholder="Search Twitter">
-                <span class="input-group-text wd-border-none wd-white"><i class="fas fa-cog fa-2x wd-blue"></i></span>
+            <div class="mt-2 d-flex flex-row justify-content-between">
+                <div class="input-group">
+                    <span class="input-group-text wd-img-round wd-white"><i class="fas fa-search"></i></span>
+                    <input type="search" class="form-control wd-search-border  me-2"
+                           placeholder="Search Twitter">
+                </div>
+                <div>
+                    <span class="input-group-text wd-border-none wd-white"><i
+                            class="fas fa-cog fa-2x wd-blue"></i></span>
+                </div>
             </div>
-
 
             <ul class="nav nav-tabs mt-2">
                 <li class="nav-item">
@@ -79,7 +83,12 @@
             </ul>
 
             <!--Image-->
-            <img src="starship.jpg" class="img-fluid mt-2">
+            <div class="card wd-border-none">
+                <img src="starship.jpg" class="img-fluid mt-2">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h1 class="text-white">SpaceX's Starship</h1>
+                </div>
+            </div>
 
             <ul class="list-group mb-2">
                 <li class="list-group-item fw-bold">
@@ -133,14 +142,101 @@
                 <li class="list-group-item">
                     <span class="fw-bold">Who to follow</span>
                 </li>
-                <li class="list-group-item">
-                    <img src="java.jpg" class="img-fluid" width="100px" height="100px">
-                    Java
-                    <button type="button" class="btn btn-primary btn-sm wd-img-round wd-float-right">Follow</button>
+                <li class="list-group-item fw-bold">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <div class="p-2">
+                                    <img src="java.jpg" class="rounded-circle" width="50px" height="50px">
+                                </div>
+                                <div class="p-2">
+                                    Java <i class="fas fa-check-circle"></i> <br/>
+                                    <span class="fw-normal">@Java</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <button type="button" class="btn btn-primary btn-sm wd-img-round wd-float-right">Follow
+                            </button>
+                        </div>
+                    </div>
                 </li>
-                <li class="list-group-item">Relativity Space</li>
-                <li class="list-group-item">Web Development</li>
-                <li class="list-group-item">Web Development</li>
+                <li class="list-group-item fw-bold">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <div class="p-2">
+                                    <img src="relativity.webp" class="rounded-circle" width="50px" height="50px">
+                                </div>
+                                <div class="p-2">
+                                    Relativity Space <i class="fas fa-check-circle"></i> <br/>
+                                    <span class="fw-normal">@relativityspace</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <button type="button" class="btn btn-primary btn-sm wd-img-round wd-float-right">Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item fw-bold">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <div class="p-2">
+                                    <img src="virgin.svg" class="rounded-circle" width="50px" height="50px">
+                                </div>
+                                <div class="p-2">
+                                    Virgin Galactic <i class="fas fa-check-circle"></i> <br/>
+                                    <span class="fw-normal">@virgingalactic</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <button type="button" class="btn btn-primary btn-sm wd-img-round wd-float-right">Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item fw-bold">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <div class="p-2">
+                                    <img src="NASA.png" class="rounded-circle" width="50px" height="50px">
+                                </div>
+                                <div class="p-2">
+                                    NASA <i class="fas fa-check-circle"></i> <br/>
+                                    <span class="fw-normal">@NASA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <button type="button" class="btn btn-primary btn-sm wd-img-round wd-float-right">Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item fw-bold">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div>
+                            <div class="d-flex flex-row">
+                                <div class="p-2">
+                                    <img src="tesla.webp" class="rounded-circle" width="50px" height="50px">
+                                </div>
+                                <div class="p-2">
+                                    Tesla <i class="fas fa-check-circle"></i> <br/>
+                                    <span class="fw-normal">@Tesla</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <button type="button" class="btn btn-primary btn-sm wd-img-round wd-float-right">Follow
+                            </button>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
