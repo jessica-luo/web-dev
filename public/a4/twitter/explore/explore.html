@@ -5,13 +5,16 @@
     <title>Title</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link href="explore.css" rel="stylesheet"/>
 </head>
 <body>
 
 <div class="container">
     <div class="row">
+
+        <!-- Left SideBar -->
         <div class="col-2">
-            <div class="list-group">
+            <div class="list-group mt-2">
                 <a href="explore.html" class="list-group-item list-group-item-action">
                     <i class="fab fa-twitter"></i>
                 </a>
@@ -40,21 +43,24 @@
                 <a href="more.html" class="list-group-item list-group-item-action">
                     <i class="fas fa-ellipsis-h"></i> More
                 </a>
-                <button class="btn btn-primary">
+                <button class="btn btn-primary wd-img-round mt-2">
                     Tweet
                 </button>
             </div>
         </div>
 
+
         <!-- Main Content -->
         <div class="col-6">
-            <div class="input-group">
-                <span class="input-group-text"><i class="fas fa-search"></i></span>
-                <input type="search" class="form-control round"
+            <div class="input-group mt-2">
+                <span class="input-group-text wd-img-round wd-white"><i class="fas fa-search"></i></span>
+                <input type="search" class="wd-img-round form-control wd-search-border me-2"
                        placeholder="Search Twitter">
+                <span class="input-group-text wd-border-none wd-white"><i class="fas fa-cog fa-2x wd-blue"></i></span>
             </div>
 
-            <ul class="nav nav-tabs">
+
+            <ul class="nav nav-tabs mt-2">
                 <li class="nav-item">
                     <a class="nav-link active" href="for-you.html">For you</a>
                 </li>
@@ -71,9 +77,71 @@
                     <a class="nav-link" href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
+
+            <!--Image-->
+            <img src="starship.jpg" class="img-fluid mt-2">
+
+            <ul class="list-group mb-2">
+                <li class="list-group-item fw-bold">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="p-2">
+                            <span class="wd-gray"> Web Development </span><br/>
+                            ReactJS <i class="fas fa-check-circle"></i> <span class="wd-gray">- 2h</span><br/>
+                            React.js is a component based front end library that makes it very easy to build Single Page
+                            Applications or SPAs
+                        </div>
+                        <div class="p-2"><img src="reactjs.png" width="90px" height="90px"></div>
+                    </div>
+                </li>
+                <li class="list-group-item fw-bold">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="p-2">
+                            JavaScript <i class="fas fa-check-circle"></i> <span class="wd-gray">- 2h</span><br/>
+                            JavaScript is a programming language that can run on browsers as well as desktops <br/>
+                            <span class="wd-gray"> 123K Tweets </span>
+                        </div>
+                        <div class="p-2"><img src="javascript.webp" width="90px" height="90px"></div>
+                    </div>
+                </li>
+                <li class="list-group-item fw-bold">
+                    <div class="d-flex flex-row justify-content-between">
+                        <div class="p-2">
+                            <span class="wd-gray"> Web Development </span><br/>
+                            jQuery <br/>
+                            <span class="wd-gray"> 123K Tweets </span>
+                        </div>
+                        <div class="p-2"><img src="jquery.png" width="90px" height="90px"></div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex flex-row justify-content-between fw-bold">
+                        <div class="p-2">
+                            <span class="wd-gray"> Web Development </span><br/>
+                            NodeJS <i class="fas fa-check-circle"></i> <span class="wd-gray">- 2h</span><br/>
+                            <span class="wd-gray"> 123K Tweets </span>
+                        </div>
+                        <div class="p-2"><img src="nodejs.png" width="90px" height="90px"></div>
+                    </div>
+                </li>
+            </ul>
         </div>
+
+
+        <!-- Right Sidebar -->
         <div class="col">
-            Third of three columns
+            <ul class="list-group mt-2">
+                <li class="list-group-item">
+                    <span class="fw-bold">Who to follow</span>
+                </li>
+                <li class="list-group-item">
+                    <img src="java.jpg" class="img-fluid" width="100px" height="100px">
+                    Java
+                    <button type="button" class="btn btn-primary btn-sm wd-img-round wd-float-right">Follow</button>
+                </li>
+                <li class="list-group-item">Relativity Space</li>
+                <li class="list-group-item">Web Development</li>
+                <li class="list-group-item">Web Development</li>
+            </ul>
         </div>
     </div>
 </div>
