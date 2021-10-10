@@ -9,7 +9,7 @@ const ExploreComponent = () => {
                            placeholder="Search Twitter">
                 </div>
                 <div>
-                    <span class="input-group-text wd-border-none">
+                     <span class="input-group-text wd-blk">
                         <a href="settings.html"> <i class="fas fa-cog fa-2x text-primary"></i></a>
                     </span>
                 </div>

@@ -7,6 +7,10 @@ span.wd-white {
     border-right: none;
 }
 
+span.wd-blk {
+    background-color: black; !important;
+}
+
 .wd-white {
     background-color: white;
 }
