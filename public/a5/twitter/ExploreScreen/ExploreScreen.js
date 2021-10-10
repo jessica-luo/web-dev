@@ -22,5 +22,5 @@ import ExploreComponent from "./ExploreComponent.js";
     </div>
 </div>
     `);
-})();
+})($);
 
