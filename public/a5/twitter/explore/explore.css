@@ -7,6 +7,10 @@ span.wd-white {
     border-right: none;
 }
 
+.wd-white {
+    background-color: white;
+}
+
 .wd-search-border {
     border-left: none;
     border-radius: 25px;
