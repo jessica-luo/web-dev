@@ -1,6 +1,6 @@
 const NavigationSidebar = () => {
     return(`
-            <div class="list-group">
+            <div class="list-group mt-2">
                 <a class="list-group-item" href="/">
                     <i class="fab fa-twitter"></i></a>
             <!-- continue the rest of the list -->
