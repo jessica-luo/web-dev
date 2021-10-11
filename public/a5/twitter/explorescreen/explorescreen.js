@@ -11,7 +11,7 @@ import ExploreComponent from "./ExploreComponent.js";
             ${NavigationSidebar()}
         </div>
         
-        <div class="col-auto col-lg-6 mb-2">
+        <div class="col-auto col-lg-6">
             ${ExploreComponent()}
         </div>
 

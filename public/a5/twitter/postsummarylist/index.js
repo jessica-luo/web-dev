@@ -3,8 +3,7 @@ import PostSummaryItem from "./PostSummaryItem.js";
 
 const PostSummaryList = () => {
     return (`
-            <div class="col d-none d-lg-block">
-            <ul class="list-group">
+    <ul class="list-group mb-2">
                 ${
         posts.map(post => {
             return (PostSummaryItem(post));
@@ -12,7 +11,6 @@ const PostSummaryList = () => {
     }
                 
             </ul>
-        </div>
 `);
 }
 export default PostSummaryList;
