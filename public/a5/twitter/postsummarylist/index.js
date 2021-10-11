@@ -5,10 +5,9 @@ const PostSummaryList = () => {
     return (`
             <div class="col d-none d-lg-block">
             <ul class="list-group">
-                
                 ${
-        posts.map(posts => {
-            return (PostSummaryItem(posts));
+        posts.map(post => {
+            return (PostSummaryItem(post));
         }).join('')
     }
                 
