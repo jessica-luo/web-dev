@@ -1,5 +1,6 @@
 import React from "react";
 import PostSummaryList from "../PostSummaryList";
+import starship from "./starship.jpg"
 
 const ExploreComponent = () => {
     return (
@@ -37,7 +38,7 @@ const ExploreComponent = () => {
             </ul>
 
             <div className="card wd-border-none">
-                <img src="/images/starship.jpg" className="img-fluid"/>
+                <img src={starship} className="img-fluid" alt=""/>
                 <div className="card-img-overlay d-flex flex-column justify-content-end">
                     <h1 className="text-black">SpaceX's Starship</h1>
                 </div>
