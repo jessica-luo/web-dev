@@ -5,7 +5,6 @@ import HelloWorld from "./components/a6/HelloWorld";
 import Practice from "./components/a6/Practice";
 import Build from "./components/a6/Build";
 import {BrowserRouter, Route} from "react-router-dom";
-import A6 from "./components/a6/index";
 
 function App() {
     return (
