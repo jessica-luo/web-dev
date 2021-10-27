@@ -20,7 +20,7 @@ const PostSummaryItem = ({
                             <span className="text-muted fw-normal">- {post.time}</span></p>
                         {post.title}
                     </div>
-                    <div className="p-2"><img src={post.image} width="90px" height="90px"/></div>
+                    <div className="p-2"><img src={post.image} width="90px" height="90px" alt=""/></div>
                 </div>
             </li>
         </>
