@@ -10,10 +10,10 @@ function App() {
     return (
         <BrowserRouter>
             <div className="container">
-                <Route path={["/", "/a6", "/a6/hello"]} exact={true}>
+                <Route path="/a6/hello" exact={true}>
                     <HelloWorld/>
                 </Route>
-                <Route path="/a6/Practice" exact={true}>
+                <Route path={["/", "/a6", "/a6/Practice"]} exact={true}>
                     <Practice/>
                 </Route>
                 <Route path="/a6/Build" exact={true}>
