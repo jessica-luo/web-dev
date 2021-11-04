@@ -4,8 +4,8 @@ const tweets = (state = posts, action) => {
     switch (action.type) {
         case 'like-tweet':
             return state.map(tweet => {
-                if(tweet._id === action.tweet._id) {
-                    if(tweet.liked === true) {
+                if (tweet._id === action.tweet._id) {
+                    if (tweet.liked === true) {
                         tweet.liked = false;
                         tweet.stats.likes--;
                     } else {
@@ -19,7 +19,6 @@ const tweets = (state = posts, action) => {
             });
         case 'delete-tweet':
             return state.filter(tweet => tweet._id !== action.tweet._id)
-            break;
         case 'create-tweet':
             const tweet = {
                 _id: (new Date()).getTime() + '',
@@ -44,7 +43,6 @@ const tweets = (state = posts, action) => {
                 },
                 ...state
             ]);
-            break;
         default:
             return (state);
     }
