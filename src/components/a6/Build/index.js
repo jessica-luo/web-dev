@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import "./ExploreScreen/explore.css"
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 
-const Build = () => {
+const Build6 = () => {
     return (
         <>
             <h1>Build</h1>
@@ -17,4 +17,4 @@ const Build = () => {
         </>
     )
 };
-export default Build;
+export default Build6;

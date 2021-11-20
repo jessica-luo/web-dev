@@ -1,6 +1,12 @@
+import A7 from "./a7";
+import A6 from "./a6";
+import React from "react";
+
 const History = () => {
     return (
         <div>
+            <A6/>
+            <A7 />
             <h2>Non React.js Assignments</h2>
             <h3>Assignment 2</h3>
             <ul>

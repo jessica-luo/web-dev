@@ -13,7 +13,7 @@ const reducer = combineReducers({tweets: tweets, who})
 const store = createStore(reducer);
 
 
-const Build = () => {
+const Build7 = () => {
     return (
         <Provider store={store}>
             <div>
@@ -32,4 +32,4 @@ const Build = () => {
         </Provider>
     );
 };
-export default Build;
+export default Build7;
