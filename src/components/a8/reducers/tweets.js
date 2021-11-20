@@ -39,12 +39,10 @@ const tweets = (state = posts, action) => {
                 },
             };
             return ([
-                {
-                    ...tweet,
-                    "tweet": action.tweet
-                },
-                ...state
-            ]);
+                    tweet,
+                    ...state,
+                ]
+            );
         default:
             return (state);
     }

@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import TweetListItem from "./TweetListItem";
 import {fetchAllTweets} from "../../../../services/twitterService";
 
-const selectAllTweets = (state) => state.tweets;
+const selectAllTweets = (state) => state.tweets
 
 const TweetList = () => {
     const tweets = useSelector(selectAllTweets);
