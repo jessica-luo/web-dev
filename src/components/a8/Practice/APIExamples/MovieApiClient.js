@@ -8,7 +8,7 @@ const MovieApiClient = () => {
     const createMovieClickHandler = () => {
         movie._id = (new Date()).getTime().toString();
         movie.rating = 2.5;
-        fetch('http://localhost:4000/api/movies', {
+        fetch('http://web-dev-node-2.herokuapp.com/api/movies', {
             method: 'POST',
             body: JSON.stringify(movie),
             headers: {
