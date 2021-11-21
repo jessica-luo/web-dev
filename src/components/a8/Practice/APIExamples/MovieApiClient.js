@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+const MOVIE_API = 'https://web-dev-node-2.herokuapp.com/api/movies';
 
 const MovieApiClient = () => {
 
@@ -21,19 +22,19 @@ const MovieApiClient = () => {
     }
     const [movies, setMovies] = useState([]);
     const deleteMovie = (movie) =>
-        fetch(`https://web-dev-node-2.herokuapp.com/api/movies${movie._id}`, {
+        fetch(`https://web-dev-node-2.herokuapp.com/api/movies/${movie._id}`, {
             method: 'DELETE'
         })
             .then(response => response.json())
             .then(movies => setMovies(movies));
 
     useEffect(() =>
-            fetch('https://web-dev-node-2.herokuapp.com/api/movies')
+            fetch('https://web-dev-node-2.herokuapp.com/api/movies/')
                 .then(response => response.json())
                 .then(movies => setMovies(movies))
         , []);
     const saveMovie = () =>
-        fetch(`https://web-dev-node-2.herokuapp.com/api/movies${movie._id}`, {
+        fetch(`https://web-dev-node-2.herokuapp.com/api/movies/${movie._id}`, {
             method: 'PUT',
             body: JSON.stringify(movie),
             headers: {
