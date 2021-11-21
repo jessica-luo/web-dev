@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-const MOVIE_API = 'https://web-dev-node-2.herokuapp.com/api/movies';
 
 const MovieApiClient = () => {
 
