@@ -24,7 +24,7 @@ function App() {
                     <Build/>
                 </Route>
 
-                <Route path={["/", "/a7", "/a7/hello"]} exact={true}>
+                <Route path={[ "/a7", "/a7/hello"]} exact={true}>
                     <HelloWorld/>
                 </Route>
                 <Route path={["/a7", "/a7/practice"]} exact={true}>
@@ -34,7 +34,7 @@ function App() {
                     <Build7/>
                 </Route>
 
-                <Route path={["/", "/a6", "/a6/hello"]} exact={true}>
+                <Route path={[ "/a6", "/a6/hello"]} exact={true}>
                     <HelloWorld/>
                 </Route>
                 <Route path={["/a6", "/a6/practice"]} exact={true}>
