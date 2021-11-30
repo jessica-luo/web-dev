@@ -1,5 +1,6 @@
 import A7 from "./a7";
 import A6 from "./a6";
+import A8 from "./a8"
 import React from "react";
 
 const History = () => {
@@ -7,6 +8,7 @@ const History = () => {
         <div>
             <A6/>
             <A7 />
+            <A8 />
             <h2>Non React.js Assignments</h2>
             <h3>Assignment 2</h3>
             <ul>

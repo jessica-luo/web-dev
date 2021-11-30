@@ -1,0 +1,30 @@
+.wd-img-round {
+    border-radius: 25px;
+}
+
+span.wd-white {
+    background-color: white;
+    border-right: none;
+}
+
+span.wd-blk {
+    background-color: black;
+}
+
+.wd-white {
+    background-color: white;
+}
+
+.wd-search-border {
+    border-left: none;
+    border-radius: 25px;
+}
+
+.wd-border-none {
+    border: none;
+}
+
+.wd-borders {
+    border-right: #1da1f2;
+}
+

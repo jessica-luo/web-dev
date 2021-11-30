@@ -1,0 +1,66 @@
+> db.movies.insert({title: 'Aliens', rating: 4.5})
+WriteResult({ "nInserted" : 1 })
+
+> show dbs
+admin          0.000GB
+config         0.000GB
+local          0.000GB
+test           0.000GB
+webdev         0.000GB
+
+> db.movies.insert({title: 'Terminator', rating: 4.8})
+WriteResult({ "nInserted" : 1 })
+
+> db.movies.insert({title: 'Avatar', rating: 4.7})
+WriteResult({ "nInserted" : 1 })
+
+> db.movies.insert({title: 'Dune', rating: 4.9})
+WriteResult({ "nInserted" : 1 })
+
+> db.movies.find()
+{ "_id" : ObjectId("61a468b174b2e763acf0d918"), "title" : "Aliens", "rating" : 4.5 }
+{ "_id" : ObjectId("61a4690874b2e763acf0d919"), "title" : "Terminator", "rating" : 4.8 }
+{ "_id" : ObjectId("61a4691c74b2e763acf0d91a"), "title" : "Avatar", "rating" : 4.7 }
+{ "_id" : ObjectId("61a4692c74b2e763acf0d91b"), "title" : "Dune", "rating" : 4.9 }
+
+> db.movies.find({_id: ObjectId("61a468b174b2e763acf0d918")});
+{ "_id" : ObjectId("61a468b174b2e763acf0d918"), "title" : "Aliens", "rating" : 4.5 }
+
+> db.movies.find({title: 'Aliens'});
+{ "_id" : ObjectId("61a468b174b2e763acf0d918"), "title" : "Aliens", "rating" : 4.5 }
+
+> db.movies.find().pretty()
+{
+	"_id" : ObjectId("61a468b174b2e763acf0d918"),
+	"title" : "Aliens",
+	"rating" : 4.5
+}
+{
+	"_id" : ObjectId("61a4690874b2e763acf0d919"),
+	"title" : "Terminator",
+	"rating" : 4.8
+}
+{
+	"_id" : ObjectId("61a4691c74b2e763acf0d91a"),
+	"title" : "Avatar",
+	"rating" : 4.7
+}
+{
+	"_id" : ObjectId("61a4692c74b2e763acf0d91b"),
+	"title" : "Dune",
+	"rating" : 4.9
+}
+
+> db.movies.updateOne({title: 'Avatar'}, {$set : {rating : 4.9}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+
+> db.movies.updateOne({_id: ObjectId("61a468b174b2e763acf0d918")}, {$set : {rating : 4.5}});
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 0 }
+
+> db.movies.deleteOne({_id: ObjectId("61a468b174b2e763acf0d918")});
+{ "acknowledged" : true, "deletedCount" : 1 }
+
+> db.movies.find();
+{ "_id" : ObjectId("61a4690874b2e763acf0d919"), "title" : "Terminator", "rating" : 4.8 }
+{ "_id" : ObjectId("61a4691c74b2e763acf0d91a"), "title" : "Avatar", "rating" : 4.9 }
+{ "_id" : ObjectId("61a4692c74b2e763acf0d91b"), "title" : "Dune", "rating" : 4.9 }
